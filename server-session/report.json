@@ -1,0 +1,80 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2022-02-07T14:46:51.867Z",
+    "end": "2022-02-07T14:46:51.889Z",
+    "duration": 22
+  },
+  "tests": [
+    {
+      "title": "인증서 파일이 존재해야 합니다",
+      "fullTitle": "파일 및 환경 변수 테스트 인증서 파일이 존재해야 합니다",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to be true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected false to be true\n    at Context.<anonymous> (__tests__/server.test.js:6:45)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "환경 변수에 데이터베이스 비밀번호가 존재해야 합니다",
+      "fullTitle": "파일 및 환경 변수 테스트 환경 변수에 데이터베이스 비밀번호가 존재해야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to exist",
+        "showDiff": false,
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected undefined to exist\n    at Context.<anonymous> (__tests__/server.test.js:11:45)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "인증서 파일이 존재해야 합니다",
+      "fullTitle": "파일 및 환경 변수 테스트 인증서 파일이 존재해야 합니다",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected false to be true",
+        "showDiff": true,
+        "actual": "false",
+        "expected": "true",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected false to be true\n    at Context.<anonymous> (__tests__/server.test.js:6:45)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "환경 변수에 데이터베이스 비밀번호가 존재해야 합니다",
+      "fullTitle": "파일 및 환경 변수 테스트 환경 변수에 데이터베이스 비밀번호가 존재해야 합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to exist",
+        "showDiff": false,
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected undefined to exist\n    at Context.<anonymous> (__tests__/server.test.js:11:45)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "\"before all\" hook in \"Authentication - Server\"",
+      "fullTitle": "Authentication - Server \"before all\" hook in \"Authentication - Server\"",
+      "duration": 19,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: the string \"ER_ACCESS_DENIED_ERROR: Access denied for user 'root'@'localhost' (using password: NO)\" was thrown, throw an Error :)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+        "message": "the string \"ER_ACCESS_DENIED_ERROR: Access denied for user 'root'@'localhost' (using password: NO)\" was thrown, throw an Error :)"
+      }
+    }
+  ],
+  "passes": []
+}

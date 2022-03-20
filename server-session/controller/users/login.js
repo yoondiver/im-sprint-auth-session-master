@@ -17,8 +17,10 @@ module.exports = {
     } else {
       // your code here
       // HINT: req.session을 사용하세요.
-      req.session.userID = userInfo.userId;
-      res.json({ test: "test", data: userInfo, message: "ok" });
+      req.session.save(function () {
+        req.session.userID = userInfo.userId;
+        res.json({ test: "test", data: userInfo, message: "ok" });
+      });
     }
   },
 };
